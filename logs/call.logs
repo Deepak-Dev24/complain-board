@@ -1,0 +1,5 @@
+file_put_contents(
+ "logs/calls.log",
+ date("Y-m-d H:i:s") . " | $name | $phone\n",
+ FILE_APPEND
+);
