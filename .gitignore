@@ -1,0 +1,38 @@
+# --------------------
+# PHP / Composer
+# --------------------
+vendor/
+
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.pyc
+
+# --------------------
+# Logs & runtime files
+# --------------------
+logs/
+*.log
+
+# --------------------
+# Generated audio & text
+# --------------------
+recordings/
+transcripts/
+*.wav
+*.mp3
+*.txt
+processed_files.json
+
+# --------------------
+# Environment / secrets
+# --------------------
+.env
+
+# --------------------
+# OS / Editor
+# --------------------
+.DS_Store
+Thumbs.db
+.vscode/
