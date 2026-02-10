@@ -196,7 +196,7 @@ mysql -u aiuser -p call_billing < /var/www/complain-board/database/call_billing.
 ### 1️⃣2️⃣ Configure PHP DB Connection
 
 ```bash
-nano /var/www/ai_calling_system/core/db.php
+nano /var/www/complain-board/core/db.php
 ```
 
 ```php
