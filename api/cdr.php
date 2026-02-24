@@ -33,7 +33,7 @@ foreach ($cdrList as $cdr) {
 
     $data[] = [
         "uuid"          => $cdr['uuid'],
-        "date"          => $cdr['start_time'],
+        "date"          => date('Y-m-d H:i:s', strtotime($cdr['start_time'] ?? '')),
         "direction"     => $cdr['call_direction'],
         "from"          => $cdr['caller_id_number'],
         "to"            => $cdr['destination_number'],
