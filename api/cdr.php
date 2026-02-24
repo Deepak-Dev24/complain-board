@@ -38,7 +38,7 @@ foreach ($cdrList as $cdr) {
         "from"          => $cdr['caller_id_number'],
         "to"            => $cdr['destination_number'],
         "duration"      => $cdr['billsec'] ?? 0,
-        "status"        => ucfirst($cdr['hangup_disposition']),
+        "status" => ucfirst($cdr['hangup_disposition'] ?? ''),
         "recording_url" => $cdr['recording_url'] ?? null
     ];
 }
